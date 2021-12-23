@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>max</title>
+	<script type="text/javascript">
+		var input1 = window.prompt("enter first number");
+		var input2 = window.prompt("enter second number");
+		var input3 = window.prompt("enter third number");
+		var input4 = window.prompt("enter fourth number");
+		var input5 = window.prompt("enter fiveth number");
+		var value1 = parseInt( input1);
+		var value2 = parseInt( input2);
+		var value3 = parseInt( input3);
+		var value4 = parseInt( input4);
+		var value5 = parseInt( input5);
+		var maxValue = maximum( value1, value2, value3, value4, value5);
+		document.writeln("<p>first number: "+ value1 +" </p>" + 
+			"<p>second number: "+ value2 +" </p>" + 
+			"<p>third number: "+ value3 +" </p>" + 
+			"<p>fourth number: "+ value4 +" </p>" +
+			"<p>fiveth number: "+ value5 +" </p>");
+		function maximum(x, y, z, t, k) {
+			return Math.max(x, Math.max( y, Math.max( z, Math.max( t, k ) ) ) );
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

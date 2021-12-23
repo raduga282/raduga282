@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	// lab-14.1
+	 <button onclick="getToday()">Today</button>
+	 <button onclick="setHours()">24 hours ago</button>
+	 <button onclick="setFullYear()">10 years ago</button>
+	 <button onclick="setDate()">7 day ago</button>
+	<script type="text/javascript">
+		function getToday() {
+			var d = new Date();
+			window.alert(d);
+		};
+		function setHours(){
+			var d = new Date();
+			d.setHours(-24);
+			window.alert(d);
+		};
+		function setFullYear(){
+			var d = new Date();
+			d.setFullYear(d.getFullYear()-10);
+			window.alert(d);
+		};
+		function setDate(){
+			var d = new Date();
+			d.setDate(d.getDate() -7);
+			window.alert(d);
+		};
+
+	</script>
+</body>
+</html>

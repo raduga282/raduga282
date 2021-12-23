@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>8-melting images</title>
+	<style type="text/css">
+		#cover{
+			position: relative;
+			margin: 0 auto;
+		}
+		#cover img{
+			position: absolute;
+			left: 0;
+			transition: opasity 4s ease-in-out;
+		}
+		#cover img .top:hover{opasity: 0;}
+	</style>
+</head>
+<body>
+	<div id="cover">
+		<img class="bottom" width="200px" height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqe5slZjFmC-bdq9RwCoYs2RIuzJR3anafkw&usqp=CAU" alt="dance">
+		<img class="top" width="200px" height="200px" src="https://lh3.googleusercontent.com/proxy/fB3UwE-R8Em5sPUF5oNyBbSJNaeHmOOy0N5uwY0-8_HQ0UA_fmuZVl47pQLHJn0cQfJOaki2Ydu9MPNGTXBHTcotWZhKrZTOsAhmmtRw_nnvcbU8u7bMn1IAtQVEbOsIK_jPQDvrayyWzOYGAaW57r7b7sYFyS98x62aECV4MYe-ppQbmvw" alt="dance">
+	</div>
+</body>
+</html>

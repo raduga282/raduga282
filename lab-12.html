@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab-12</title>
+</head>
+<body>
+<script type="text/javascript">
+	// lab-12.1
+	//  var input = window.prompt("enter r");
+	//  var r = parseInt(input);
+	//  var s;
+	//  function circleArea(s)
+	//  {
+	//  	var s;
+	//  	var p=3.14;
+	//  	s = p*r*r;
+	//  	document.writeln(s);
+	//  }
+	//  circleArea(s);
+
+	// lab-12.2
+	// var input1 = window.prompt("enter time < 24");
+	// var time = parseInt(input1);
+	// var cost;
+	// park(cost);
+	// function park(cost) {
+	//  	var cost;
+	//		if (time <= 3){
+	//			document.writeln("your cost is: 5k");
+	//	} else 
+	//		{
+	//			for(var i = 3; i<=time; i++)
+	//				cost = cost + 1000;
+	//			document.writeln("your cost is :" + cost);
+	//		};
+	//		return cost; 
+	//	document.writeln(cost);
+	// }
+	// lab-12.3
+	// var input1 = window.prompt("enter x1");
+	// var input2 = window.prompt("enter y1");
+	// var input3 = window.prompt("enter x2");
+	// var input4 = window.prompt("inter y2");
+	// var x1 = parseInt("input1");
+	// var y1 = parseInt("input2");
+	// var x2 = parseInt("input3");
+	// var y2 = parseInt("input4");
+	// var distance;
+	// find_distance(distance);
+	// function find_distance(distance){
+	// 	
+	// 		distance=Math.sqrt(((x1-x2)*(x1-x2))+((y1-y2)*(y1-y2)));
+	//		return distance;
+	//    	document.writeln("2 tsegiin hoorondoh zai: " + distance );
+	//    };
+	// lab-12.4
+	// var value;
+	// for(var i=1; i<=100; i++)
+	// {
+	//		value = Math.floor(1+Math.random()*100);
+	//		document.writeln("<li>" + value + "</li>");
+	// };
+	// lab-12.5
+	// var input1 = window.prompt("enret base");
+	// var input2 = window.prompt("enter exponent");
+	// var base = parseInt(input1);
+	// var exponent = parseInt(input2);
+	// integerPower(base, exponent);
+	// Math.integerPower( base, exponent ){
+	//		for( var i=1; i<=exponent; i++){
+	//			exponent = base*base;
+	//		};
+	//		return exponent;
+	//		document.writeln(exponet);
+	//	};
+			
+
+	// lab-12.6
+	// var input1 = window.prompt("enter integer 1");
+	// var a = parseInt(input1);
+	// var input2 = window.prompt("enter integer 2");
+	// var b = parseInt(input2);
+	// multiple(a,b);
+	// function multiple(a,b) {
+	//		if(a%b==0){
+	//			document.writeln(true);
+	//		}else
+	//			document.writeln(false);
+	//		return a,b;
+	// };
+	// 
+	// lab-12.7
+//	let srt= window.prompt("enter numbers");
+//	function isEven(i){
+	//		if(i%2==0){
+	//			document.writeln(true);
+	//		}else
+	//			document.writeln(false);
+	//		};
+	//for (var i = 0; i < srt.lenghth; i++){
+	//		isEven(i);
+	// };
+	// lab-12.8
+	// 8.a
+	// var a;
+	// var b;
+	// var c=a/b;
+	// 8.b
+	// var a;
+	// var b;
+	// var u=a%b;
+	// 8.c
+	// var a;
+	// function displayDigits(){
+	//		var digit;
+	//		while(a != 0){
+    //	    digit = a % 10;
+    //	    a = a / 10;
+    //		return digit;
+    //	    document.writeln(digit);
+    //		};
+	// };
+	// 8.d
+	// var a = window.prompt("enter a");
+	// displayDigits(a);
+	// function displayDigits(a){
+	//		var digit;
+	//		while(a != 0){
+    //	    digit = a % 10;
+    //	    a = a / 10;
+    //		return digit;
+    //	    document.writeln( digit);
+    //		};
+	// };
+	// lab-12.9
+	// 9.a
+	// var C;
+	// var F;
+	// function celsius(C) {
+	//		 C = 5.0 / 9.0 *(F- 32 );
+	//			return C;
+	//};
+	// 9.b
+	// var C;
+	// var F;
+	// function fahrenheit(F) {
+	//		 F = 9.0 / 5.0 *C+ 32;
+	//		 return F;
+	// };
+	// 9.c
+	// var C=window.prompt("enter celsius");
+	// var F;
+	// fahrenheit(F);
+	// function fahrenheit(F) {
+	//	 F = 9.0 / 5.0 *C+ 32;
+	//	 document.writeln(F);
+	//	 return F;
+	// };
+
+	// lab-12.10
+	// var input1 = window.prompt("enter float integer");
+	// var input2 = window.prompt("enter float integer");
+	// var input3 = window.prompt("enter float integer");
+	// var a = parseFloat(input1);
+	// var b = parseFloat(input2);
+	// var c = parseFloat(input3);
+	// var min;
+	// minimum3(a, b, c);
+	// function minimum3(a,b,c) {
+	//		min = Math.min(a, b, c);
+	//		return min;
+	// };
+	// lab-12.11
+	// var grade = window.prompt("enter  srudent grade");
+	// qualityPoints(grade);
+	// function qualityPoints(grade) {
+	//		switch(grade){
+	//			case (grade > 90):
+	//				document.writeln("A");
+	//				break;
+	//			case (90 > grade > 80):
+	//				document.writeln("B");
+	//				break;
+	//			case (80 > grade > 70):
+	//				document.writeln("C");
+	//				break;
+	//			case (70 > grade > 60):
+	//				document.writeln("D");
+	//				break;
+	//			case ( grade < 60):
+	//				document.writeln("F");
+	//				break;
+	//		};
+	//	};
+	// lab-12.12
+	// var a;
+	  function flip(a) {
+	  	var a;
+		if(a=0){
+			document.writeln(true);
+			}else
+			document.writeln(false);
+			};
+		</script>
+	<button onclick="flip(a)">Toss</button>
+</body>
+</html>

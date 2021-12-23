@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+    // lab-13.1
+    //   a) Жаваскрипт утгуудын жагсаалтыг __хүсэгт_____-д хадгалдаг.
+    //    b) 4 элементтэй p массивын нэрс бол ___0____, _1_____, _2_____,___3___ юм.
+    //    c) 2 хэмжээст хүснэгтэд эхний индексээр хүснэгтийн _мөр____, хоёр дахь индексээр
+    //    хүснэгтийн__багана___-г тодорхойлдог.
+    //    d) mxn хүснэгт нь _m_____ мөр, __n____ баганатай байх ба нийт __m*n____ элементүүдийг
+    //    агуулна.
+    //    e) d хүснэгтийн 3-р мөр, 5-р баганийн элементийн нэр бол __d[2][4]_____ юм.
+    // lab-13.2
+    //      a) Массив доторх тодорхой байршил эсвэл элементэд хандахын тулд бид массивын нэр,
+    //    элементийн утгыг зааж өгдөг.-худал(индексийг зааж өгдөг)
+    //    b) Нэг хувьсагч зарлахад массивт зайг нөөцөлж өгдөг.- үнэн
+    //    c) p[100] элементэд хандахын тулд өмнө нь заавал 100 хүртэлх элементүүдийг нөөцөлсөн
+    //    байх хэрэгтэй.- худал (массивийг үүсгэсний дараа хэмжээг нь өөрчилж болох динамик шинж чанартай) 
+    //    d) 15-н ширхэг элементтэй массивт 0 анхны утгуудыг олгохын тулд дор хаяж нэг for
+    //    илэрхийлэл бичих хэрэгтэй.- худал .(массив зарлаад шууд оноож өгч болно)
+    //    e) 2 хэмжээст массивын бүх элементүүдээр гүйхдээ үүрэлсэн давталт ашиглаж хэрэгтэй.-үнэн
+		// lab-13.3.a
+	//	var f = ['a','b','c','d','e','f','g','h'];
+	//	var a = f[6];
+	//	document.writeln(a);
+	// lab-13.3.b
+	//	var f = new Array(5);
+	//	var length = f.length;
+	//	for( var i=0; i<length; ++i){
+	//		f[i]=8;
+	//		document.writeln(f[i]);
+	//	};
+	// lab-13.3.c
+	//	var a = newArray(100);
+	//	var sum;
+	//	var l = a.length;
+	//	for(var i=0; i<length; ++i){
+	//		sum=sum+a[i];
+	//	};
+	//	document.writeln(sum);	
+	// lab-13.3.d
+	//	var b = new Array(34);
+	//	var a = new Array(11);
+	//	for(var i=0; i<11; ++i){
+	//		a[i]=i;
+	//	for(var i=0; i<b.length; ++i){
+	//		b[i]=a[i];
+	//	}
+	//	};
+
+	// for(var i=0; i<11; ++i)
+	// 		b[i]=new array(11)
+	//	document.writeln(b[i]);
+	// lab-13.3.e
+		
+    //      w = [50.78, 60.23, 20.12, 10.11, 40.5];
+    //      minValue = Math.min(...w);
+    //      maxValue = Math.max(...w);
+    //      document.writeln("the minimum element is " + minValue);
+    //      document.writeln("the maximum element is " + maxValue);
+    // lab-13.4
+    // a) var t = [[2][3]];
+    // b) 2 mortei; 
+    // c) 3 baganatai;
+    // d) 6 elementtei;
+    // e) 1r mornii buh element n 1.0;1.1;1.2;
+    // f) 3r baganii buh element n 0.3; 1.3;
+   	// g) var t=[2][3];
+    //    t[0][1]="0";
+   	//
+    // h) var t=[[2],[3]];
+    //	  t[0][0]="0";
+    //	  t[0][1]="0";
+    //	  t[0][2]="0";
+    //	  t[1][0]="0";
+    // 	  t[1][1]="0";
+    //	  t[1][2]="0";
+    // i) var t=[[2][3]];
+    //	  min=Math.min(...t);
+    //	  document.writeln("the minimum element is" + min);
+    // j) var t = [[2],[3]];
+    //	  document.writeln(t[0][0],t[0][1],t[0][2]);
+   // var t=[[2],[3]];
+   // var content = "<h2>"+heading+"</h2><table>"+"<thead><th>индекс</th><th>Утга</th></thead></tbody>";
+   // var length = t.length;
+   // for(var i=0; i<length; ++i)
+   // {
+   // 	content += "<tr><td>" +i+ "</td><td>" + t[i] + "</td></tr>";
+   // }
+   // lab-13.6
+   // a) var a = new Array(20);
+   //	 var length=a.length;
+   //	 for(i=0; i<10; ++i){
+   //		a[i]='0';
+   //		document.writeln(a[i]);
+   // };
+   // b) var a = new Array(15);
+   //	var length=a.length;
+   //	for(i=0;i<length;i++){
+   //		a[i]=i++;
+   //		document.writeln(a[i]);
+   // };
+   // c) var bestStore = new Array(1,2,3,4,5,6,7,8,9,10);
+   //	for(i=0; i<5; i++){
+   //			document.writeln(bestStore[i]);
+   // };
+   // lab-13.7
+   function sum() {
+       var input=window.prompt("enter 100-10 one integer");
+       return input;
+   }
+   var arrA=new Array(10);
+   var b;
+   for(var i=0; i<10; i++){
+    arrA[i]=sum();
+   }
+   for(var i=0; i<arrA.length; i++){
+    b=arrA[i];
+    for(var j=i; i<arrA.length; i++){
+        if(b!=arrA[i]){
+        document.writeln(arrA[i]);
+    }
+    else if(b==arrA[i])
+            document.writeln(b);
+    }
+   // else
+   //     document.writeln(arrA[i]);
+   }
+   // var a = [input1,input2,input3,input4,input5,input6,input7,input8,input9,input10];
+   // var length=a.length;
+   // for(i=0; i<length; i++){
+   // 	if(a[i]=i){
+   //		document.writeln(a[i]);
+   //	}
+   // }
+   // lab-13.8
+   // var k;
+   // var q;
+   // var a= new Array(36);
+   // for(var i=1; i<18; ++i){
+   //	k=Math.floor(1+Math.random()*6);
+   //	 a[i]=k;
+   //	 document.writeln(a[i]);
+   //	 document.writeln("<br>");
+   //	q=Math.floor(1+Math.random()*6);
+   //	 a[i]=q;
+   //	 document.writeln(a[i]);
+   //  s=k+q;
+   // document.writeln("<br>");
+   // document.writeln(s);
+   // };
+   // lab-13.9
+   // var a=new Array(1000);
+   // var length = a.length;
+   // var isPrime=true;
+   // for(i=0; i<length; i++){
+   //  a[i]=1;
+   //  a[0]='0';
+   //  a[1]='0';
+   //  for (i=2; i<a[i]; i++) {
+   //     if (a[i] % i != 0) {
+   //         document.writeln(a[i]);
+   //     }
+   // };
+   // };
+   
+
+   
+
+
+   
+
+	</script>
+    
+  
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>7</title>
+	<style type="text/css">
+		.boxskew .textbox{
+			margin-left: 75px;
+			background: lightgreen;
+			height: 100px;
+			width: 200px;
+			padding: 25px 0;
+			text-align: center;
+			font-size: 250%;
+			border: 3px solid darkgreen;
+			border-radius: 15px;
+			transform: skewY(30deg);
+			transform: skewX(30deg);
+			animation: skew 3s infinite linear;
+		}
+		.boxskew: hover{
+			transform: skewY(30deg) skewX(30deg);
+		}
+		.boxskew{
+			transition-duration: 1s;
+			transition-property: transform;
+		}
+	</style>
+</head>
+<body>
+	<div class="boxskew">
+		<div class="textbox">Skewing Text</div>
+	</div>
+</body>
+</html>
